@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangaroo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hangaroo-container">
+        <h1>Hang Me Baby!</h1>
+        <div id="difficulty-container">
+            <label>
+                <input type="radio" name="difficulty" value="easy" onclick="startGame()"> Easy
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderate" onclick="startGame()"> Moderate
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="hard" onclick="startGame()"> Hard
+            </label>
+        </div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="word-container"></div>
+        </div>
+        <div id="clue-container">
+            <button onclick="getClue()">Get a Clue (-25 points)</button>
+            <p id="score">Score: 0</p>
+        </div>
+        <div id="keyboard-container"></div>
+        <button onclick="restartGame()">Restart Game</button> <!-- Restart button -->
+    </div>
+
+    <footer>
+        <p>By<br>
+        So, EJ Karl Cedric B. Gonzales, Eirolits  Mendova, Luis Michael</p>
+    </footer>
+
+    <script src="hangaroo.js"></script>
+</body>
+</html>
